@@ -53,3 +53,7 @@ There are more options planned. For now, I am just trying to get the code base s
 ## Compatibility
 
 - Chromium-based browsers, but tested on Brave.
+
+## Credits
+
+- https://flagicons.lipis.dev/ - Flag assets are included.

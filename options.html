@@ -7,10 +7,25 @@
 
 <body>
     <h1>X Buddy Extension Options</h1>
-    <label>
-        <input type="checkbox" id="debug"> Enable Debug Mode
-    </label>
-    <button id="save">Save</button>
+    <section>
+        <h2>General</h2>
+        <label>
+            <input type="checkbox" id="debug"> Enable Debug Mode
+        </label>
+        <button id="save">Save</button>
+    </section>
+
+    <section>
+        <h2>Location Cache</h2>
+        <p>Download the stored usernames and locations or sync new entries from a CSV file.</p>
+        <button id="exportCsv">Export CSV</button>
+        <div>
+            <label for="importCsv">Import CSV:</label>
+            <input type="file" id="importCsv" accept=".csv,text/csv">
+            <button id="importCsvButton">Sync</button>
+        </div>
+        <p id="status" role="status"></p>
+    </section>
     <script src="options.js"></script>
 </body>
 
