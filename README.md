@@ -4,7 +4,10 @@ A Chrome browser extension that displays the location of X.com users next to the
 
 ## Features
 
--   Includes debug mode for console logging.
+-   Adds a location (if present) next to the authors name.
+-   Import/Export
+-   Statistics
+-   No external communication. Just a standalone extension.
 
 ## Installation
 
@@ -23,7 +26,9 @@ A Chrome browser extension that displays the location of X.com users next to the
 ## Options
 
 -   Right-click the extension icon and select "Options" to access settings.
--   Enable "Debug Mode" to see console logs for troubleshooting.
+-   Select how you want to fetch location. Theres Auto, Hover, and Button.
+-   Export cached data.
+-   Import and sync cached data from another machine.
 
 There are more options planned. For now, I am just trying to get the code base stable.
 
@@ -44,6 +49,8 @@ There are more options planned. For now, I am just trying to get the code base s
 
 -   `activeTab`: Allows the extension to access the current tab for content script injection.
 -   `storage`: For saving debug settings.
+-   `tabs`: For finding loading location.
+-   `scripting`: For ruining the logic and updating the location.
 
 ## ToDo's
 
@@ -58,7 +65,7 @@ There are more options planned. For now, I am just trying to get the code base s
 
 -   https://flagicons.lipis.dev/ - Flag assets are included.
 
-**DISCLAIMER:**
+## DISCLAIMER:
 
 This extension is provided "as is" without any warranties, express or implied. The author(s) is/are not responsible for any misuse of this extension or any damages that may result from its use. Users are solely responsible for ensuring their use of this extension complies with X.com's Terms of Service, applicable privacy laws, and local regulations.
 
